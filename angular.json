@@ -105,6 +105,68 @@
           }
         }
       }
+    },
+    "store": {
+      "projectType": "library",
+      "root": "projects/store",
+      "sourceRoot": "projects/store/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/store/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/store/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/store/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/store/src/test.ts",
+            "tsConfig": "projects/store/tsconfig.spec.json",
+            "karmaConfig": "projects/store/karma.conf.js"
+          }
+        }
+      }
+    },
+    "ui-view": {
+      "projectType": "library",
+      "root": "projects/ui-view",
+      "sourceRoot": "projects/ui-view/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ui-view/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ui-view/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ui-view/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ui-view/src/test.ts",
+            "tsConfig": "projects/ui-view/tsconfig.spec.json",
+            "karmaConfig": "projects/ui-view/karma.conf.js"
+          }
+        }
+      }
     }
   },
   "defaultProject": "devinfra-angular-getting-started"
