@@ -167,6 +167,37 @@
           }
         }
       }
+    },
+    "bussiness-logic": {
+      "projectType": "library",
+      "root": "projects/bussiness-logic",
+      "sourceRoot": "projects/bussiness-logic/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/bussiness-logic/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/bussiness-logic/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/bussiness-logic/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/bussiness-logic/src/test.ts",
+            "tsConfig": "projects/bussiness-logic/tsconfig.spec.json",
+            "karmaConfig": "projects/bussiness-logic/karma.conf.js"
+          }
+        }
+      }
     }
   },
   "defaultProject": "devinfra-angular-getting-started"

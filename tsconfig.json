@@ -21,6 +21,9 @@
       ],
       "@ui-view": [
         "projects/ui-view/src/public-api"
+      ],
+      "@bussiness-logic": [
+        "projects/bussiness-logic/src/public-api"
       ]
     },
     "module": "es2020",

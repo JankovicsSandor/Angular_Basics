@@ -2,4 +2,5 @@
  * Public API Surface of ui-view
  */
 
-export {Board} from "./lib/board"
+export * from "./lib/store"
+export * from "./lib/view"
