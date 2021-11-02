@@ -1,0 +1,8 @@
+<h2>
+  {{stage.stageName}}
+</h2>
+<div>
+  <div *ngFor="let task of stage.issues">
+    <app-board-issue [issue]="task"></app-board-issue>
+  </div>
+</div>

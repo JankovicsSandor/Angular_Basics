@@ -1,5 +1,7 @@
+import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BussinessLogicModule } from '@bussiness-logic';
 import { StoreModule } from '@store';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -13,7 +15,9 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    StoreModule
+    StoreModule,
+    RouterModule,
+    BussinessLogicModule
   ],
   providers: [],
   bootstrap: [AppComponent]

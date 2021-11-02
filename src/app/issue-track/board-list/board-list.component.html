@@ -1,0 +1,4 @@
+<div *ngFor="let board of boardList$|async" cdkDropList>
+  <button mat-raised-button color="primary" (click)="addNewIssueToBoard(board)">Add new issue</button>
+  <app-board-item [boardItem]="board"></app-board-item>
+</div>

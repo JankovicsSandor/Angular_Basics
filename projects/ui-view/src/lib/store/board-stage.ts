@@ -7,9 +7,9 @@ export class BoardStage{
   /**
    *
    */
-  constructor() {
-    this.id=-1;
-    this.name="",
-    this.vipLimit=16;
+  constructor(id:number=-1,name:string="",vipLimit=16) {
+    this.id=id;
+    this.name=name,
+    this.vipLimit=vipLimit;
   }
 }

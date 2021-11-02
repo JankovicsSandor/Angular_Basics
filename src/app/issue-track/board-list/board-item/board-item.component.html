@@ -1,0 +1,7 @@
+<div class="boards-container" cdkDropListGroup>
+  <div *ngFor="let stage of boardItem?.stages" class="kanbanStatus" cdkDropList [cdkDropListData]="stage.issues"
+    id="{{stage.id}}" (cdkDropListDropped)="drop($event)">
+    <app-board-stage [stage]="stage"></app-board-stage>
+  </div>
+
+</div>

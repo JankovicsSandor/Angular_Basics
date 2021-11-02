@@ -2,6 +2,5 @@
  * Public API Surface of bussiness-logic
  */
 
-export * from './lib/bussiness-logic.service';
-export * from './lib/bussiness-logic.component';
+export {BoardIssueDbViewService} from "./lib/issue-board-view/board-issue-db-view.service"
 export * from './lib/bussiness-logic.module';

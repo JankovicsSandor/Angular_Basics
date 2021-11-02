@@ -1,0 +1,17 @@
+.kanbanStatus{
+  background: #EBECF0;
+    border-radius: 3px;
+    display: grid;
+    grid-auto-rows: max-content;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.boards-container {
+  display: grid;
+  grid-auto-columns: 272px;
+  grid-auto-flow: column;
+  grid-gap: 8px;
+  height: 40vh;
+  overflow: auto;
+}
